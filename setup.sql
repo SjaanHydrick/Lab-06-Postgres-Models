@@ -1,0 +1,6 @@
+CREATE TABLE stevenuniverse (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name TEXT NOT NULL,
+    weapon TEXT NOT NULL,
+    species TEXT NOT NULL
+);
