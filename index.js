@@ -25,7 +25,7 @@ app.get('/stevenuniverse/:id', (req, res, next) => {
     .catch(next);
 });
 
-app.put('/stevenuniverse', (req, res, next) => {
+app.put('/stevenuniverse/:id', (req, res, next) => {
   StevenUniverse
     .update(req.params.id, req.body)
     .then(character => res.send(character))

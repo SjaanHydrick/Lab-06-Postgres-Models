@@ -36,7 +36,7 @@ module.exports = class StevenUniverse {
 
     static async update(id, { name, weapon, species }) {
       const { rows } = await pool.query(
-        'UPDATE stevenuniverse SET name=$1, weapon=$2, url=$3 WHERE id=$4 RETURNING *', [name, weapon, species, id]
+        'UPDATE stevenuniverse SET name=$1, weapon=$2, species=$3 WHERE id=$4 RETURNING *', [name, weapon, species, id]
       );
 
       return new StevenUniverse(rows[0]);

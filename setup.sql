@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS stevenuniverse;
+
 CREATE TABLE stevenuniverse (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name TEXT NOT NULL,
